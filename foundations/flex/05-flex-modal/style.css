@@ -18,8 +18,11 @@ body {
 .modal {
   background: white;
   width: 480px;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  gap: 20px;
 }
 
 .icon {
@@ -33,6 +36,22 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+}
+
+.modal-without-icon {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  gap: 15px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 22px;
 }
 
 .close-button {
